@@ -7,7 +7,7 @@
           <li><a href="#">API</a></li>
           <li><a href="#">关于</a></li>
           <li><a href="#">注册</a></li>
-          <li><a href="#">登陆</a></li>
+          <li><a href="#">登录</a></li>
       </ul>
   </div>
 </template>
