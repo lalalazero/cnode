@@ -2,7 +2,8 @@
   <div id="app">
     <Header />
     <main>
-      <PostList />
+      <router-view name='main'>
+      </router-view>
     </main>
     
   </div>
