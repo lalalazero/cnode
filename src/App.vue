@@ -28,5 +28,6 @@ export default {
   main {
     width: 80%;
     margin: auto;
+    /* border: 1px solid red; */
   }
 </style>
