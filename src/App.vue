@@ -30,6 +30,7 @@ export default {
   main {
     width: 90%;
     margin: auto;
+    min-height: calc(100vh - 50px);
     /* border: 1px solid blue; */
   }
   .main-content {
