@@ -27,7 +27,7 @@
             <span>{{ post | formatTab }}</span>
           </span>
           <span class="title">
-            <router-link :to="{ name: 'post-content', params: { id: post.id }}">
+            <router-link :to="{ name: 'post-content', params: { id: post.id, name: post.author.loginname }}">
               <span>{{post.title}}</span>
             </router-link>
           </span>

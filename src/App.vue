@@ -2,8 +2,10 @@
   <div id="app">
     <Header />
     <main>
-      <router-view name='main'>
-      </router-view>
+      <router-view name='slidebar'></router-view>
+      <div class="main-content">
+        <router-view name='main'></router-view>
+      </div>
     </main>
     
   </div>
@@ -26,8 +28,12 @@ export default {
     background-color: #ddd;
   }
   main {
-    width: 80%;
+    width: 90%;
     margin: auto;
+    /* border: 1px solid blue; */
+  }
+  .main-content {
+    margin-right: 330px;
     /* border: 1px solid red; */
   }
 </style>
