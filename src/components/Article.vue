@@ -27,8 +27,15 @@
         <ul>
           <li v-for="(reply, index) in post.replies">
             <div >
-              <img :src="reply.author.avatar_url" alt>
-              <span>{{ reply.author.loginname }}</span>
+              <router-link :to="{
+                name: 'user_info',
+                params: {
+                  name: reply.author.loginname
+                }
+              }">
+                <img :src="reply.author.avatar_url" alt>
+                <span>{{ reply.author.loginname }}</span>
+              </router-link>
               <span class="floor">{{ index + 1}}楼• {{ reply.create_at | formatDate }}</span>
               <span v-if="reply.ups.length > 0">{{ reply.ups.length }}</span>
               <span v-else></span>
