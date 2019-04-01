@@ -4,15 +4,15 @@
 
 论坛首页
 
-![论坛首页](https://github.com/lalalazero/cnode/tree/master/pictures/cnode1.jpeg)
+![论坛首页](https://lalalazero.top/images/cnode1.jpeg)
 
 帖子页
 
-![帖子页](https://github.com/lalalazero/cnode/tree/master/pictures/cnode2.jpeg)
+![帖子页](https://lalalazero.top/images/cnode2.jpeg)
 
 个人信息页
 
-![个人信息页](https://github.com/lalalazero/cnode/tree/master/pictures/cnode3.jpeg)
+![个人信息页](https://lalalazero.top/images/cnode3.jpeg)
 
 ### 技术栈
 
