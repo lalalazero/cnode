@@ -96,6 +96,7 @@ ul {
   /* border: 1px solid #fff; */
   margin-top: 20px;
   margin-right: 330px;
+  overflow: hidden;
   /* border: 1px solid red; */
   /* border-radius: 3px; */
 }
