@@ -1,21 +1,21 @@
-# cnode
+## vue.js 搭建 cnode 社区基础版
 
-> A Vue.js project
+### 预览效果
 
-## Build Setup
+论坛首页
 
-``` bash
-# install dependencies
-npm install
+![论坛首页](https://github.com/lalalazero/cnode/pictures/cnode1.jpeg)
 
-# serve with hot reload at localhost:8080
-npm run dev
+帖子页
 
-# build for production with minification
-npm run build
+![帖子页](https://github.com/lalalazero/cnode/pictures/cnode2.jpeg)
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+个人信息页
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+![个人信息页](https://github.com/lalalazero/cnode/pictures/cnode3.jpeg)
+
+### 技术栈
+
+- vue.js
+- vue-router
+

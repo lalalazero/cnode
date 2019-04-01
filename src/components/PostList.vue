@@ -67,7 +67,7 @@ export default {
         .get("https://cnodejs.org/api/v1/topics", {
           params: {
             page: this.page,
-            limit: 20
+            limit: 10
           }
         })
         .then(res => {
