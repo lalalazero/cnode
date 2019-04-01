@@ -95,6 +95,8 @@ ul {
 .article {
   /* border: 1px solid #fff; */
   margin-top: 20px;
+  margin-right: 330px;
+  /* border: 1px solid red; */
   /* border-radius: 3px; */
 }
 .topic {

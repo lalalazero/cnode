@@ -27,7 +27,9 @@
             <span>{{ post | formatTab }}</span>
           </span>
           <span class="title">
-            <router-link :to="{ name: 'post-content', params: { id: post.id, name: post.author.loginname }}">
+            <router-link
+              :to="{ name: 'post-content', params: { id: post.id, name: post.author.loginname }}"
+            >
               <span>{{post.title}}</span>
             </router-link>
           </span>
@@ -35,28 +37,38 @@
         </li>
       </ul>
     </div>
+    <div class="pagination">
+      <pagination @handleList="renderList"/>
+    </div>
   </div>
 </template>
 
 <script>
+import pagination from "./Pagination";
 export default {
   name: "PostList",
   data() {
     return {
       isLoading: true,
-      posts: []
+      posts: [],
+      page: 1
     };
   },
   beforeMount() {
     this.isLoading = true;
     this.getData();
   },
+  components: {
+    pagination
+  },
   methods: {
     getData() {
       this.$http
         .get("https://cnodejs.org/api/v1/topics", {
-          page: 1,
-          limit: 20
+          params: {
+            page: this.page,
+            limit: 20
+          }
         })
         .then(res => {
           this.isLoading = false;
@@ -68,6 +80,12 @@ export default {
         .catch(err => {
           console.log("请求失败,err ", err);
         });
+    },
+    renderList(value) {
+      if (value !== this.page) {
+        this.page = value;
+        this.getData();
+      }
     }
   }
 };
@@ -82,6 +100,8 @@ img {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .topbar {
   color: #5eb700;
@@ -157,5 +177,9 @@ li:not(:first-child):hover {
 
 .posts a:visited {
   color: #888;
+}
+
+.PostList {
+  padding: 20px 0;
 }
 </style>

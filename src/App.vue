@@ -3,9 +3,7 @@
     <Header />
     <main>
       <router-view name='slidebar'></router-view>
-      <div class="main-content">
         <router-view name='main'></router-view>
-      </div>
     </main>
     
   </div>
@@ -28,13 +26,9 @@ export default {
     background-color: #ddd;
   }
   main {
-    width: 90%;
+    width: 80%;
     margin: auto;
     min-height: calc(100vh - 50px);
-    /* border: 1px solid blue; */
   }
-  .main-content {
-    margin-right: 330px;
-    /* border: 1px solid red; */
-  }
+  
 </style>
